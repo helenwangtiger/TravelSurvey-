@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController{
+
+    IBOutlet UITextView *textView;
+    BOOL loadRegistration;
+
+
+}
+@property (nonatomic,retain) IBOutlet UITextView *textview;
 
 @end
