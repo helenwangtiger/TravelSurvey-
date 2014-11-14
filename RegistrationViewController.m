@@ -209,7 +209,7 @@
     }
     else{
    
-        NSString *stringOfSubmit = [NSString stringWithFormat:@"http://129.120.61.219/txdot_qian/response.php?first_name=%@&last_name=%@&email_address=%@&home_address=%@",[firstName urlencode],[lastName urlencode],[emailAddress urlencode],[homeAddress urlencode]] ;
+        NSString *stringOfSubmit = [NSString stringWithFormat:@"address/file.php?first_name=%@&last_name=%@&email_address=%@&home_address=%@",[firstName urlencode],[lastName urlencode],[emailAddress urlencode],[homeAddress urlencode]] ;
         NSLog(@"string of sumitb %@",stringOfSubmit);
         NSURL *url_registration = [NSURL URLWithString:stringOfSubmit];
         NSLog(@"url string %@",url_registration);

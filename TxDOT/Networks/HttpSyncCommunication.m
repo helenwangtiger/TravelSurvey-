@@ -56,7 +56,7 @@ static HttpSyncCommunication* hsyncCommunication_Instance = nil;
     
     if (self = [super init]) {
         // init..
-        serverAddr = @"http://129.120.61.219/txdot_qian/send.php";
+        serverAddr = @"address/file.php";
     }
     
     return self;

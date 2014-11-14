@@ -60,7 +60,7 @@
     }
         
 
-            NSString *serverAddress = [[NSString stringWithFormat:@"http://129.120.61.219/txdot_qian/send.php?actionType=insertLocation&trip_name=%@&sample_number=%@&coordinate=%@",tripName,sampleNumber,coordinateString] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+            NSString *serverAddress = [[NSString stringWithFormat:@"http:address/file.php?actionType=insertLocation&trip_name=%@&sample_number=%@&coordinate=%@",tripName,sampleNumber,coordinateString] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
             NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:serverAddress] cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:10];
             [request setHTTPMethod: @"GET"];
             [request addValue:@"text/xml; charset=utf-8" forHTTPHeaderField:@"Content-Type"];
