@@ -1,5 +1,5 @@
 ==============
-TravelSurvey-
+TravelSurvey
 ==============
 This app is compatiable with iOS 6 and iOS7 on iPhone 4 or higer except iPhone 6 or iPhone 6 Plus. The orderly names of the 
 .m files represent the tab bars respectively in the app. 
