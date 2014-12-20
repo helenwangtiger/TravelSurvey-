@@ -1,7 +1,7 @@
 ==============
 TravelSurvey
 ==============
-This app is compatiable with iOS 6 and iOS7 on iPhone 4 or higer except iPhone 6 or iPhone 6 Plus. The orderly names of the 
+This app is compatiable with iOS 6 and iOS7 on iPhone 4 or higer except iPhone 6 and iPhone 6 Plus. The orderly names of the 
 .m files represent the tab bars respectively in the app. 
 This source code frames TravelSurvey into four tab bars, "Instructins," "Profile," "Route," "Trips." These tabs are used to collect the entire data of household travel survey.
 
@@ -21,8 +21,7 @@ array called “categoryArray” for use in different data categories.
 
 The answers are eventually stored into a property list file (plist) organized as a dictionary structure. The answers are saved as
 a value pairing with an identifying key from the last index “keyOfDic” in “answerContent”.  The one-time input answers are 
-immediately written into a plist.The trip plist, which is named tripName.plist,is dynamically and individually created so that 
-each trip information can match the corresponding trip.  
+immediately written into a plist.The trip plist, which is named tripName.plist,is dynamically and individually created so that each trip information can match the corresponding trip. 
 
 The method of uploading data to the database is by making an http request to the PHP web service.  At the time when the PHP file 
 receives the request, the PHP file starts to process SQL query and transfer the data to the database. The http request is 
@@ -30,4 +29,8 @@ produced by a string that is structured by the server address, sample number, ac
 allowed to re-submit data if they edit the data. On the server side, if the sending sample number cannot be found in the 
 database table, the PHP file executes SQL insert query.Otherwise, it executes an update query. 
 
-
+How to use this source code
+----------------------------
+1.Install Xcode and downlaod the source code. 
+2.Clicking the file "TxDOT.xcodeproj" to run the app on Xcode.
+You can edit the registration view in "RegistrationViewController"
